@@ -31,5 +31,8 @@ router.get('/contact.html', function(req, res, next) {
   res.render('contact', { title: 'Contact' });
 });
 
+router.get('/a', function(req, res, next) {
+  res.render('a.html', { title: 'Contact' });
+});
 
 module.exports = router;
