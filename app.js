@@ -10,9 +10,16 @@ var usersRouter = require('./routes/users');
 var app = express();
 //Import the mongoose module
 
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'hbs');
+var exphbs  = require('express-handlebars');
+var express_handlebars_sections = require('express-handlebars-sections');
+
+app.use(express.static(path.resolve(__dirname, 'public')));
+app.engine('handlebars', exphbs({defaultLayout: 'main',
+    helpers:{
+        section: express_handlebars_sections()
+    }
+}));
+app.set('view engine', 'handlebars');
 
 app.use(logger('dev'));
 app.use(express.json());
