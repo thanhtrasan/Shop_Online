@@ -9,17 +9,6 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 //Import the mongoose module
-var mongoose = require('mongoose');
-
-var mongoDB = 'mongodb://Admin:123456@ds211440.mlab.com:11440/food_online';
-mongoose.connect(mongoDB).then(
-    function(){
-        console.log("Connected");
-    },
-    function (err) {
-        console.log("UnConnect ");
-    }
-);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
