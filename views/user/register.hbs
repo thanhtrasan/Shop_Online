@@ -1,117 +1,39 @@
-{{!-- <div class="row">
-    <div class="col-md-4 col-md-offset-4">
-        <h1>Sing up</h1>
-        <form action="" methor="post">
-            <div class="form-grop">
-                <label for="email">E-Mail</label>
-                <input type="text" id="email" name="email" class="form-control">
-            </div>
-             <div class="form-grop">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" class="form-control">
-            </div>
-            <button type="submit"> Sing Up</button>
-        </form>
-    </div>
-</div> --}}
-
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
-
-	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
-	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	{{!-- <link rel="stylesheet" href="../css/bootstrap.css"> --}}
-	<link rel="stylesheet" href="../public/css/bootstrap.css">
-
-	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="../public/css/magnific-popup.css">
-
-	<!-- Flexslider  -->
-	<link rel="stylesheet" href="../public/css/flexslider.css">
-
-	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="../public/css/owl.carousel.min.css">
-	<link rel="stylesheet" href="../public/css/owl.theme.default.min.css">
-	
-	<!-- Date Picker -->
-	<link rel="stylesheet" href="../public/css/bootstrap-datepicker.css">
-	<!-- Flaticons  -->
-	<link rel="stylesheet" href="../public/fonts/flaticon/font/flaticon.css">
-
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="../public/css/style.css">
-
-	<!-- Modernizr JS -->
-	<script src="../public/js/modernizr-2.6.2.min.js"></script>
-
-
-
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 
 <div class="container">
     <div class="row">
-        <div class="col-md-4 col-md-offset-4">
-            <div class="panel panel-default">
-                <div class="panel-body">
-                    <h5 class="text-center">
-                        SIGN UP</h5>
-                    <form class="form form-signup" role="form">
-                    <div class="form-group">
-                        <div class="input-group">
-                            <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-                            <input type="text" class="form-control" placeholder="Username" />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="input-group">
-                            <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
-                            </span>
-                            <input type="text" class="form-control" placeholder="Email Address" />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="input-group">
-                            <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-                            <input type="password" class="form-control" placeholder="Password" />
-                        </div>
-                    </div>
+        <h2 class="col-sm-offset-3 col-sm-6">Signup</h2>
+    </div <div class="row">
+    <div class="col-sm-offset-1 col-sm-2">
+    </div>
+    <div class="col-sm-6">
+        <form action="r" method="post" accept-charset="utf-8" class="form" role="form">
+            <div class="row">
+                <div class="col-xs-6 col-md-6">
+                    <input type="text" name="firstname" value="" class="form-control input-lg" placeholder="First Name" />
                 </div>
-                <a href="http://www.jquery2dotnet.com" class="btn btn-sm btn-primary btn-block" role="button">
-                    SUBMIT</a> </form>
+                <div class="col-xs-6 col-md-6">
+                    <input type="text" name="lastname" value="" class="form-control input-lg" placeholder="Last Name" />
+                </div>
             </div>
-            {{!-- {{csrfToken }} --}}
-        </div>
+            <input type="text" name="email" value="" class="form-control input-lg" placeholder="Your Email" />
+            <input type="password" name="password" value="" class="form-control input-lg" placeholder="Password" />
+            <input type="password" name="confirm_password" value="" class="form-control input-lg" placeholder="Confirm Password" />
+            <label>Gender : </label>
+            <label class="radio-inline">
+                <input type="radio" name="gender" value="M" id=male />Male
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="gender" value="F" id=female />Female
+            </label>
+            <br />
+            <br />
+
+            <button class="btn btn-lg btn-primary btn-block signup-btn" type="submit">Create my account</button>
+        </form>
     </div>
 </div>
-</div> 
-<!-- jQuery -->
-	<script src="../public/js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="../public/js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="../public/js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="../public/js/jquery.waypoints.min.js"></script>
-	<!-- Flexslider -->
-	<script src="../public/js/jquery.flexslider-min.js"></script>
-	<!-- Owl carousel -->
-	<script src="../public/js/owl.carousel.min.js"></script>
-	<!-- Magnific Popup -->
-	<script src="../public/js/jquery.magnific-popup.min.js"></script>
-	<script src="../public/js/magnific-popup-options.js"></script>
-	<!-- Date Picker -->
-	<script src="../public/js/bootstrap-datepicker.js"></script>
-	<!-- Stellar Parallax -->
-	<script src="../public/js/jquery.stellar.min.js"></script>
-	<!-- Main -->
-	<script src="../public/js/main.js"></script>
+</div>
