@@ -104,6 +104,18 @@ app.get('/shop/short', function (req, res) {
   })
 });
 
+app.get('/shop/thun', function (req, res) {
+  
+  var query="select * from quanao where maquanao like '%QT%'";
+  db.load(query).then(
+  rows=>{
+      var vm={
+          ttsp:rows
+      };
+        res.render('shop',vm);
+  })
+});
+
 
 app.get('/about', function (req, res) {
   res.render('about');
