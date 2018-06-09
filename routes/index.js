@@ -19,7 +19,7 @@ app.get('/index', function (req, res) {
 });
 
 app.get('/shop', function (req, res) {
-  var query="select * from quanao where maquanao like '%MJ%'";
+  var query="select * from quanao";
   db.load(query).then(
   rows=>{
       var vm={
@@ -31,8 +31,9 @@ app.get('/shop', function (req, res) {
 
 
 
-app.get('/shop', function (req, res) {
-  var query="select * from quanao";
+app.get('/shop/hoodie', function (req, res) {
+  
+  var query="select * from quanao where maquanao like '%HD%'";
   db.load(query).then(
   rows=>{
       var vm={
