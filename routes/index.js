@@ -92,6 +92,18 @@ app.get('/shop/jean', function (req, res) {
   })
 });
 
+app.get('/shop/short', function (req, res) {
+  
+  var query="select * from quanao where maquanao like '%QS%'";
+  db.load(query).then(
+  rows=>{
+      var vm={
+          ttsp:rows
+      };
+        res.render('shop',vm);
+  })
+});
+
 
 app.get('/about', function (req, res) {
   res.render('about');
