@@ -56,6 +56,18 @@ app.get('/shop/jacket', function (req, res) {
   })
 });
 
+app.get('/shop/tshirt', function (req, res) {
+  
+  var query="select * from quanao where maquanao like '%TS%'";
+  db.load(query).then(
+  rows=>{
+      var vm={
+          ttsp:rows
+      };
+        res.render('shop',vm);
+  })
+});
+
 
 app.get('/about', function (req, res) {
   res.render('about');
