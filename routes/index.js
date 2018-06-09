@@ -1,47 +1,72 @@
 var express = require('express');
-var router = express.Router();
+var app = express.Router();
+var db = require('../fn/db');
+
+/* GET home page. */
 
 
+// router.get('/', function(req, res, next) {
+//   res.render('index', { title: 'Express' });
+// });
 
-router.get('/', function (req, res) {
+
+app.get('/', function (req, res) {
   res.render('index');
 });
 
-router.get('/shop', function (req, res) {
-  res.render('shop');
+app.get('/index', function (req, res) {
+  res.render('index');
 });
 
-router.get('/about', function (req, res) {
+app.get('/shop', function (req, res) {
+  var query="select * from quanao";
+  db.load(query).then(
+  rows=>{
+      var vm={
+          ttsp:rows
+      };
+        res.render('shop',vm);
+  })
+});
+
+app.get('/about', function (req, res) {
   res.render('about');
 });
 
-router.get('/add-to-wishlist', function (req, res) {
+app.get('/add-to-wishlist', function (req, res) {
   res.render('add-to-wishlist');
 });
 
-router.get('/blog', function (req, res) {
+app.get('/blog', function (req, res) {
   res.render('blog');
 });
 
-router.get('/contact', function (req, res) {
+app.get('/contact', function (req, res) {
   res.render('contact');
 });
 
-router.get('/cart', function (req, res) {
+app.get('/cart', function (req, res) {
   res.render('cart');
 });
 
-router.get('/checkout', function (req, res) {
+app.get('/checkout', function (req, res) {
   res.render('checkout');
 });
 
-router.get('/order-complete', function (req, res) {
+app.get('/order-complete', function (req, res) {
   res.render('order-complete');
 });
 
-router.get('/product-detail', function (req, res) {
-  res.render('product-detail');
+app.get('/product-detail', function (req, res) {
+  var query="select * from quanao where maquanao = N'"+req.query.maquanao+"'";
+  db.load(query).then(
+  rows=>{
+      var vm={
+          ttsp:rows[0]
+      };
+      console.log(vm);
+        res.render('product-detail',vm);
+  });
 });
 
-
-module.exports = router;
+module.exports = app;
