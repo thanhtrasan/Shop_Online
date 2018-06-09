@@ -31,7 +31,7 @@ app.get('/shop', function (req, res) {
 
 
 
-app.get('/shop/jeans', function (req, res) {
+app.get('/shop', function (req, res) {
   var query="select * from quanao";
   db.load(query).then(
   rows=>{
