@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express.Router();
-var db = require('../fn/db');
 
+var db=require('../fn/quan_ao_controller');
 /* GET home page. */
 
 
@@ -18,103 +18,24 @@ app.get('/index', function (req, res) {
   res.render('index');
 });
 
-app.get('/shop', function (req, res) {
-  var query="select * from quanao";
-  db.load(query).then(
-  rows=>{
-      var vm={
-          ttsp:rows
-      };
-        res.render('shop',vm);
-  })
-});
+app.get('/shop',db.shop_control);
 
 
 
-app.get('/shop/hoodie', function (req, res) {
-  
-  var query="select * from quanao where maquanao like '%HD%'";
-  db.load(query).then(
-  rows=>{
-      var vm={
-          ttsp:rows
-      };
-        res.render('shop',vm);
-  })
-});
+app.get('/shop/hoodie', db.shop_hoodie_control);
 
 
-app.get('/shop/jacket', function (req, res) {
-  
-  var query="select * from quanao where maquanao like '%JK%'";
-  db.load(query).then(
-  rows=>{
-      var vm={
-          ttsp:rows
-      };
-        res.render('shop',vm);
-  })
-});
+app.get('/shop/jacket', db.shop_jacket_control);
 
-app.get('/shop/tshirt', function (req, res) {
-  
-  var query="select * from quanao where maquanao like '%TS%'";
-  db.load(query).then(
-  rows=>{
-      var vm={
-          ttsp:rows
-      };
-        res.render('shop',vm);
-  })
-});
+app.get('/shop/tshirt',db.shop_tshirt_control);
 
-app.get('/shop/somi', function (req, res) {
-  
-  var query="select * from quanao where maquanao like '%SM%'";
-  db.load(query).then(
-  rows=>{
-      var vm={
-          ttsp:rows
-      };
-        res.render('shop',vm);
-  })
-});
+app.get('/shop/somi', db.shop_somi_control);
 
-app.get('/shop/jean', function (req, res) {
-  
-  var query="select * from quanao where maquanao like '%QJ%'";
-  db.load(query).then(
-  rows=>{
-      var vm={
-          ttsp:rows
-      };
-        res.render('shop',vm);
-  })
-});
+app.get('/shop/jean', db.shop_jean_control);
 
-app.get('/shop/short', function (req, res) {
-  
-  var query="select * from quanao where maquanao like '%QS%'";
-  db.load(query).then(
-  rows=>{
-      var vm={
-          ttsp:rows
-      };
-        res.render('shop',vm);
-  })
-});
+app.get('/shop/short', db.shop_short_control);
 
-app.get('/shop/thun', function (req, res) {
-  
-  var query="select * from quanao where maquanao like '%QT%'";
-  db.load(query).then(
-  rows=>{
-      var vm={
-          ttsp:rows
-      };
-        res.render('shop',vm);
-  })
-});
+app.get('/shop/thun',db.shop_thun_control);
 
 
 app.get('/about', function (req, res) {
@@ -145,16 +66,6 @@ app.get('/order-complete', function (req, res) {
   res.render('order-complete');
 });
 
-app.get('/product-detail', function (req, res) {
-  var query="select * from quanao where maquanao = N'"+req.query.maquanao+"'";
-  db.load(query).then(
-  rows=>{
-      var vm={
-          ttsp:rows[0]
-      };
-      console.log(vm);
-        res.render('product-detail',vm);
-  });
-});
+app.get('/product-detail',db.product_detail_control);
 
 module.exports = app;

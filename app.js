@@ -21,5 +21,4 @@ app.set('view engine', 'handlebars');
 
 app.use('/', indexRouter);
 app.use('/user', usersRouter);
-//app.listen(3800);
 module.exports = app;

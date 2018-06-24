@@ -1,2 +1,0 @@
-# FoodStoreOnline
-MILKYWAY Team

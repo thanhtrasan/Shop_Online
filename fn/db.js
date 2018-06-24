@@ -21,7 +21,7 @@ exports.load = sql => {
             	resolve(rows);
             }
 
-            cn.end();
+
         });
     });
 }
