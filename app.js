@@ -1,10 +1,17 @@
 var express = require('express');
 var exphbs  = require('express-handlebars');
 var express_handlebars_sections = require('express-handlebars-sections');
+var db=require('./fn/db');
+var dbquanao=require('./fn/quan_ao_controller');
+
 
 //var db = require('./fn/db');
 var app = express();
 var path = require('path');
+
+var body = require('body-parser');
+app.use(body.json());
+app.use(body.urlencoded({extended:false}));
 //
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/user');
@@ -21,4 +28,32 @@ app.set('view engine', 'handlebars');
 
 app.use('/', indexRouter);
 app.use('/user', usersRouter);
+
+
+
+
+ app.post('/login', function (req, res) {
+   var data= req.body;
+   var sql="select dangky.username "+ 
+           "from qlquanao.dangky "+
+           "where dangky.email = '"+data.email+"' " +
+           "and dangky.password = '"+data.password+"'";
+          
+    db.load(sql).then( rows=>{
+       if(rows.length>0)
+       {     
+       
+        dbquanao.shop_control(req,res);   
+       }
+       else
+       {         
+         res.render('login');
+       }
+      });
+          
+ });
+
+
+
+  
 module.exports = app;
