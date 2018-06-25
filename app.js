@@ -54,6 +54,15 @@ app.use('/user', usersRouter);
  });
 
 
+ app.post('/register', function (req, res) {
 
+    console.log("aa");
+    var data = req.body;
+    var sql = "insert into qlquanao.dangky(username,email,password) values('"+data.username+"','"+data.email+"', '"+data.password+"')";
+    console.log(sql);
+    db.load(sql).then(rows => {
+        dbquanao.shop_control(req,res);   
+    });
+  });
   
 module.exports = app;
