@@ -1,5 +1,9 @@
 var db= require('../fn/db.js');
 
+
+module.exports.add_product=function(req,res){
+res.end();
+};
 module.exports.shop=function (req, res)
 {
     var query="select * from quanao";
