@@ -12,9 +12,9 @@ module.exports.shop=function (req, res)
         rows=>{
             console.log('s');
             var vm={
-                ttsp:rows
-               // isLogin: req.session.isLogin,
-                //user: req.session.user
+                ttsp:rows,
+                isLogin: req.session.isLogin,
+                user: req.session.user
             };
             console.log(vm);
             res.render('shop',vm);
