@@ -13,15 +13,13 @@ exports.load = sql => {
         });
 
         cn.connect();
-
         cn.query(sql, function(error, rows, fields) {
             if (error) {
-            	reject(error);
+                console.log(error);
+                reject(error);
             } else {
             	resolve(rows);
             }
-
-
         });
     });
 }
