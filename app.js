@@ -42,8 +42,8 @@ app.use('/user', usersRouter);
     db.load(sql).then( rows=>{
        if(rows.length>0)
        {     
-       
-        dbquanao.shop_control(req,res);   
+          
+       dbquanao.shop_control(req,res);  
        }
        else
        {         

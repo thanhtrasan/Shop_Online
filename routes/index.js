@@ -1,6 +1,7 @@
 var express = require('express');
 var app = express.Router();
 
+
 var db=require('../fn/quan_ao_controller');
 /* GET home page. */
 

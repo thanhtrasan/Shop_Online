@@ -10,7 +10,9 @@ module.exports.shop=function (req, res)
     db.load(query).then(
         rows=>{
             var vm={
-                ttsp:rows
+                ttsp:rows,
+                isLogin: req.session.isLogin,
+                user: req.session.user
             };
             res.render('shop',vm);
         })
