@@ -1,17 +1,22 @@
-var db= require('../fn/db.js');
-
+var db=require('../fn/db.js');
 
 module.exports.add_product=function(req,res){
 res.end();
 };
 module.exports.shop=function (req, res)
 {
-    var query="select * from quanao";
+    var query="select * from quanao limit 10";
+    
     db.load(query).then(
+        
         rows=>{
+            console.log('s');
             var vm={
-                ttsp:rows
+                ttsp:rows,
+                isLogin: req.session.isLogin,
+                user: req.session.user
             };
+            console.log(vm);
             res.render('shop',vm);
         })
 };

@@ -3,7 +3,8 @@ var Promise = require('promise');
 
 
 exports.load = sql => {
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve, reject) =>
+    {
         var cn = mysql.createConnection({
             host: 'db4free.net',
             port: 3306,
@@ -13,15 +14,13 @@ exports.load = sql => {
         });
 
         cn.connect();
-
         cn.query(sql, function(error, rows, fields) {
             if (error) {
-            	reject(error);
+                console.log(error);
+                reject(error);
             } else {
             	resolve(rows);
             }
-
-
         });
     });
 }

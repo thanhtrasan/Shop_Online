@@ -1,6 +1,7 @@
 var express = require('express');
 var app = express.Router();
 
+
 var db=require('../fn/quan_ao_controller');
 /* GET home page. */
 
@@ -11,7 +12,7 @@ var db=require('../fn/quan_ao_controller');
 
 
 app.get('/', function (req, res) {
-  res.render('index');
+  res.render('admin/map',{layout:'admin'});
 });
 
 app.get('/index', function (req, res) {
