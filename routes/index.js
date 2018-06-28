@@ -3,6 +3,7 @@ var app = express.Router();
 
 
 var db=require('../fn/quan_ao_controller');
+var tk=require('../fn/taikhoan_controller')
 /* GET home page. */
 
 
@@ -68,5 +69,11 @@ app.get('/order-complete', function (req, res) {
 });
 
 app.get('/product-detail',db.product_detail_control);
+
+//resgiter
+
+app.get('/register',tk.get_resgister_control);
+app.post('/register',tk.resgister_control);
+
 
 module.exports = app;

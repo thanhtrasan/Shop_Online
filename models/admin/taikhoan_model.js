@@ -1,14 +1,17 @@
 var db=require('../../fn/db');
-var model="username varchar(100) not null primary key, " +
+var model="id int(20) AUTO_INCREMENT not null primary key," +
+    "username varchar(100), " +
     "password varchar(16), " +
     "email varchar(100) unique, " +
-    "type enum('1','2') ";
+    "type enum('1','2') ," +
+    "SDT char(12)," +
+    "DC varchar(120)";
 
 
 module.exports.create_table=
     db.load('create table if not exists taikhoan ( '+model+')');
 
-module.exports.add_account=(username ,password,email ,type)=> {
+module.exports.add_account=(username ,password,email ,type,sdt,dc)=> {
 
     var data=db.load("select * from taikhoan where username = N'"+username+"'")
         .then(data=>{
@@ -16,8 +19,8 @@ module.exports.add_account=(username ,password,email ,type)=> {
                 console.log("trung ten tk")
             }
             else{
-                var query = "insert into taikhoan(username ,password,email ,type) " +
-                    "values ( N'" + username + "', N'" + password + "',N'" + email + "', N'" + type + "')";
+                var query = "insert into taikhoan(username ,password,email ,type,sdt,dc) " +
+                    "values ( N'" + username + "', N'" + password + "',N'" + email + "', N'" + type +"',N'"+sdt+"',N'" +dc+"')";
                 db.load(query, function (err, result) {
                     if (err)
                         console.log(err)

@@ -12,10 +12,10 @@ var app = express();
 var session = require('express-session')
 var MySQLStore = require('express-mysql-session')(session);
 var options = {
-    host: 'db4free.net',
+    host: '127.0.0.1',
     port: 3306,
-    user: 'qlquanao',
-    password: 'qlquanao',
+    user: 'root',
+    password: '123456',
     database: 'qlquanao',
     createDatabaseTable: false,
     schema: {
@@ -64,15 +64,15 @@ app.use('/admin', adminRouter);
 
 app.post('/login', function (req, res) {
   var data= req.body;
-  var sql="select dangky.username "+ 
-          "from qlquanao.dangky "+
-          "where dangky.email = '"+data.email+"' " +
-          "and dangky.password = '"+data.password+"'";
+  var sql="select id "+
+          "from taikhoan "+
+          "where email = '"+data.email+"' " +
+          "and password = '"+data.password+"'";
          
    db.load(sql).then( rows=>{
       if(rows.length>0)
       {     
-        console.log('tao');
+
       req.session.user=rows[0];
       req.session.isLogin=true;
       console.log(req.session.isLogin); 

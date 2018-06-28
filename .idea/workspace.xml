@@ -2,13 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12861a4b-9a6e-48a3-b4c4-c0c9472b60fd" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/views/admin/quanao_delete.handlebars" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fn/admin/quan_ao_controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fn/admin/taikhoan_controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fn/taikhoan_controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/taikhoan.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fn/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/fn/db.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/admin/quanao_model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/admin/quanao_model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/admin/taikhoan_model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/admin/taikhoan_model.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/data.handlebars" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/admin/quanao_create.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/quanao_create.handlebars" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/layouts/admin.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/layouts/admin.handlebars" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/admin/quanao_delete.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/quanao_delete.handlebars" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/admin/quanao_update.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/quanao_update.handlebars" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/user/register.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/user/register.handlebars" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,8 +33,12 @@
       <file leaf-file-name="quanao_model.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/admin/quanao_model.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="55" column="81" selection-start-line="55" selection-start-column="81" selection-end-line="55" selection-end-column="81" />
+            <state relative-caret-position="275">
+              <caret line="94" column="22" selection-start-line="94" selection-start-column="22" selection-end-line="94" selection-end-column="22" />
+              <folding>
+                <element signature="e#831#1827#0" />
+                <element signature="e#3277#3443#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -34,29 +46,26 @@
       <file leaf-file-name="admin.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/admin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="68" column="23" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
+            <state relative-caret-position="34">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <file leaf-file-name="quan_ao_controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fn/admin/quan_ao_controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-153" />
+            <state relative-caret-position="34">
+              <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="quanao.handlebars" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/admin/quanao.handlebars">
+      <file leaf-file-name="quan_ao_controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fn/quan_ao_controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="172" column="51" selection-start-line="172" selection-start-column="51" selection-end-line="172" selection-end-column="51" />
-              <folding>
-                <element signature="n#head#0;n#!!top" />
-                <element signature="n#header#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#aside#0;n#div#0;n#body#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="4" column="41" lean-forward="true" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -64,15 +73,8 @@
       <file leaf-file-name="quanao_delete.handlebars" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/admin/quanao_delete.handlebars">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="108" column="49" lean-forward="true" selection-start-line="108" selection-start-column="49" selection-end-line="108" selection-end-column="49" />
-              <folding>
-                <element signature="n#head#0;n#!!top" />
-                <element signature="n#header#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#aside#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="e#4378#4561#0#HTML" />
-                <element signature="e#4598#4808#0#HTML" />
-              </folding>
+            <state relative-caret-position="34">
+              <caret line="105" column="39" lean-forward="true" selection-start-line="105" selection-start-column="39" selection-end-line="105" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -80,13 +82,8 @@
       <file leaf-file-name="quanao_create.handlebars" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/admin/quanao_create.handlebars">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="235" column="72" selection-end-line="278" />
-              <folding>
-                <element signature="n#head#0;n#!!top" />
-                <element signature="n#header#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#aside#0;n#div#0;n#body#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="-1258">
+              <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -94,39 +91,8 @@
       <file leaf-file-name="quanao_update.handlebars" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/admin/quanao_update.handlebars">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="124" column="41" lean-forward="true" selection-start-line="124" selection-start-column="41" selection-end-line="124" selection-end-column="41" />
-              <folding>
-                <element signature="n#header#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#aside#0;n#div#0;n#body#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.handlebars" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/layouts/admin.handlebars">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="taikhoan_model.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/admin/taikhoan_model.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="55" lean-forward="true" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="quanao_model.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/quanao_model.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="102" column="14" selection-start-line="102" selection-start-column="14" selection-end-line="102" selection-end-column="14" />
+            <state relative-caret-position="102">
+              <caret line="102" lean-forward="true" selection-start-line="102" selection-end-line="102" />
             </state>
           </provider>
         </entry>
@@ -157,19 +123,23 @@
         <option value="$PROJECT_DIR$/views/admin/index.handlebars" />
         <option value="$USER_HOME$/Downloads/Compressed/CoolAdmin-master/map.html" />
         <option value="$PROJECT_DIR$/views/admin/map.handlebars" />
-        <option value="$PROJECT_DIR$/models/admin/taikhoan_model.js" />
-        <option value="$PROJECT_DIR$/fn/db.js" />
-        <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/views/admin/form.handlebars" />
         <option value="$PROJECT_DIR$/views/admin/table.handlebars" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/views/layouts/admin.handlebars" />
         <option value="$PROJECT_DIR$/views/admin/data.handlebars" />
-        <option value="$PROJECT_DIR$/views/admin/quanao_create.handlebars" />
         <option value="$PROJECT_DIR$/views/admin/quanao.handlebars" />
-        <option value="$PROJECT_DIR$/views/admin/quanao_update.handlebars" />
-        <option value="$PROJECT_DIR$/models/admin/quanao_model.js" />
+        <option value="$PROJECT_DIR$/models/admin/taikhoan_model.js" />
+        <option value="$PROJECT_DIR$/fn/db.js" />
+        <option value="$PROJECT_DIR$/fn/taikhoan_controller" />
+        <option value="$PROJECT_DIR$/routes/index.js" />
+        <option value="$PROJECT_DIR$/models/taikhoan.js" />
+        <option value="$PROJECT_DIR$/views/user/register.handlebars" />
+        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/routes/admin.js" />
+        <option value="$PROJECT_DIR$/fn/admin/quan_ao_controller.js" />
+        <option value="$PROJECT_DIR$/views/admin/quanao_create.handlebars" />
+        <option value="$PROJECT_DIR$/models/admin/quanao_model.js" />
+        <option value="$PROJECT_DIR$/views/admin/quanao_update.handlebars" />
         <option value="$PROJECT_DIR$/views/admin/quanao_delete.handlebars" />
       </list>
     </option>
@@ -185,95 +155,6 @@
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
-      <path value="$PROJECT_DIR$/node_modules/accepts/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/align-text/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/amdefine/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/array-flatten/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/asap/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/async/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/balanced-match/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/basic-auth/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/bignumber.js/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/bluebird/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/body-parser/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/brace-expansion/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/bson/browser_build/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/bson/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/bytes/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/camelcase/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/center-align/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/cliui/node_modules/wordwrap/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/cliui/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/concat-map/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/content-disposition/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/content-type/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/cookie-parser/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/cookie-signature/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/cookie/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/core-util-is/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/crc/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/csrf/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/csurf/node_modules/http-errors/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/csurf/node_modules/setprototypeof/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/csurf/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/debug/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/decamelize/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/define-properties/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/depd/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/destroy/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/ee-first/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/encodeurl/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/escape-html/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/etag/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/express-handlebars-sections/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/express-handlebars/node_modules/promise/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/express-handlebars/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/express-mysql-session/node_modules/debug/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/express-mysql-session/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/express-session/node_modules/uid-safe/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/express-session/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/express/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/finalhandler/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/foreach/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/forwarded/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/fresh/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/function-bind/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/glob/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/graceful-fs/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/handlebars/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/has-symbols/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/http-errors/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/iconv-lite/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/inflight/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/inherits/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/ipaddr.js/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/is-buffer/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/isarray/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/kareem/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/kind-of/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/lazy-cache/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/lodash.get/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/lodash/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/longest/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/media-typer/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/merge-descriptors/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/methods/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/mime-db/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/mime-types/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/mime/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/minimatch/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/minimist/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/mongodb-core/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/mongodb/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/mongoose/examples/aggregate/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/mongoose/examples/express/connection-sharing/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/mongoose/examples/geospatial/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/mongoose/examples/lean/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/mongoose/examples/mapreduce/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/mongoose/examples/promises/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/mongoose/examples/querybuilder/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/mongoose/examples/replicasets/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/mongoose/package.json" />
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
@@ -288,12 +169,29 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="FoodStoreOnline" type="b2602c69:ProjectViewProjectNode" />
               <item name="FoodStoreOnline" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FoodStoreOnline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FoodStoreOnline" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FoodStoreOnline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FoodStoreOnline" type="462c0819:PsiDirectoryNode" />
+              <item name="fn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FoodStoreOnline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FoodStoreOnline" type="462c0819:PsiDirectoryNode" />
+              <item name="fn" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FoodStoreOnline" type="b2602c69:ProjectViewProjectNode" />
@@ -328,11 +226,16 @@
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="layouts" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="FoodStoreOnline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FoodStoreOnline" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -379,29 +282,29 @@
       <workItem from="1530105736548" duration="2023000" />
       <workItem from="1530109783220" duration="7975000" />
       <workItem from="1530145929024" duration="14885000" />
-      <workItem from="1530174600157" duration="11782000" />
+      <workItem from="1530174600157" duration="12537000" />
+      <workItem from="1530193306334" duration="10944000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70392000" />
+    <option name="totallyTimeSpent" value="82091000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24255952" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5014881" side_tool="true" weight="0.29867986" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info id="npm" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4985119" visible="true" weight="0.29867986" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4985119" weight="0.29867986" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49925596" weight="0.32838285" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -413,21 +316,21 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4985119" visible="true" weight="0.29867986" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24255952" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4985119" visible="true" weight="0.29867986" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49925596" weight="0.32838285" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5014881" side_tool="true" visible="true" weight="0.29867986" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24255952" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Favorites" order="3" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -438,27 +341,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/models/admin/quanao_model.js</url>
-          <line>2</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/shop.handlebars" />
-    <entry file="file://$PROJECT_DIR$/fn/quan_ao_controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="46" lean-forward="true" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/product-detail.handlebars" />
-    <entry file="file://$PROJECT_DIR$/views/index.handlebars" />
     <entry file="file://$PROJECT_DIR$/views/layouts/main.handlebars" />
     <entry file="file://$PROJECT_DIR$/models/quanao_model.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -473,7 +359,6 @@
     <entry file="file://$PROJECT_DIR$/routes/index.js" />
     <entry file="file://$PROJECT_DIR$/app.js" />
     <entry file="file://$PROJECT_DIR$/app.js" />
-    <entry file="file://$PROJECT_DIR$/routes/user.js" />
     <entry file="file://$PROJECT_DIR$/public/quanao.sql" />
     <entry file="file://$PROJECT_DIR$/public/js/main.js" />
     <entry file="file://$PROJECT_DIR$/views/about.handlebars" />
@@ -484,8 +369,6 @@
     <entry file="file://$PROJECT_DIR$/views/index.handlebars" />
     <entry file="file://$PROJECT_DIR$/views/product-detail.handlebars" />
     <entry file="file://$PROJECT_DIR$/views/cart.handlebars" />
-    <entry file="file://$PROJECT_DIR$/views/user/register.handlebars" />
-    <entry file="file://$PROJECT_DIR$/views/user/login.handlebars" />
     <entry file="file://$PROJECT_DIR$/routes/users.js" />
     <entry file="file://$PROJECT_DIR$/views/admin/index.handlebars" />
     <entry file="file://$PROJECT_DIR$/views/layouts/main.handlebars" />
@@ -501,13 +384,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6290">
           <caret line="789" column="124" selection-start-line="789" selection-start-column="40" selection-end-line="789" selection-end-column="124" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fn/quan_ao_controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
@@ -528,27 +404,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js" />
+    <entry file="file://$PROJECT_DIR$/views/admin/data.handlebars" />
+    <entry file="file://$USER_HOME$/Downloads/Compressed/CoolAdmin-master/chart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="309" column="46" lean-forward="true" selection-start-line="309" selection-start-column="46" selection-end-line="309" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/quanao.handlebars">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2363">
+          <caret line="172" column="51" selection-start-line="172" selection-start-column="51" selection-end-line="172" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/user.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/quanao_model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fn/taikhoan_controller">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/user/register.handlebars">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="27" column="18" lean-forward="true" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/fn/db.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+        <state relative-caret-position="204">
+          <caret line="12" column="32" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="12" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/admin/data.handlebars">
+    <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        <state relative-caret-position="-249">
+          <caret line="73" column="12" lean-forward="true" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/admin/taikhoan_model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="55" lean-forward="true" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/views/user/login.handlebars">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/views/layouts/admin.handlebars">
       <provider selected="true" editor-type-id="text-editor">
@@ -557,91 +467,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/quanao_model.js">
+    <entry file="file://$PROJECT_DIR$/fn/admin/taikhoan_controller.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/taikhoan.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="102" column="14" selection-start-line="102" selection-start-column="14" selection-end-line="102" selection-end-column="14" />
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Compressed/CoolAdmin-master/chart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="309" column="46" lean-forward="true" selection-start-line="309" selection-start-column="46" selection-end-line="309" selection-end-column="46" />
-          <folding>
-            <element signature="n#form#0;n#div#0;n#div#0;n#div#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="238">
+          <caret line="74" column="46" lean-forward="true" selection-start-line="74" selection-start-column="46" selection-end-line="74" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/admin/quanao.handlebars">
+    <entry file="file://$PROJECT_DIR$/models/admin/taikhoan_model.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="172" column="51" selection-start-line="172" selection-start-column="51" selection-end-line="172" selection-end-column="51" />
-          <folding>
-            <element signature="n#head#0;n#!!top" />
-            <element signature="n#header#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#aside#0;n#div#0;n#body#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="119">
+          <caret line="13" column="65" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fn/quan_ao_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="41" lean-forward="true" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/admin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fn/admin/quan_ao_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/admin/quanao_create.handlebars">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="235" column="72" selection-end-line="278" />
+        <state relative-caret-position="-1258">
+          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/admin/quanao_model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="94" column="22" selection-start-line="94" selection-start-column="22" selection-end-line="94" selection-end-column="22" />
           <folding>
-            <element signature="n#head#0;n#!!top" />
-            <element signature="n#header#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#aside#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="e#831#1827#0" />
+            <element signature="e#3277#3443#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/admin/quanao_update.handlebars">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="124" column="41" lean-forward="true" selection-start-line="124" selection-start-column="41" selection-end-line="124" selection-end-column="41" />
-          <folding>
-            <element signature="n#header#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#aside#0;n#div#0;n#body#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/admin/quanao_model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="55" column="81" selection-start-line="55" selection-start-column="81" selection-end-line="55" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/admin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="68" column="23" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
+        <state relative-caret-position="102">
+          <caret line="102" lean-forward="true" selection-start-line="102" selection-end-line="102" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/admin/quanao_delete.handlebars">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="108" column="49" lean-forward="true" selection-start-line="108" selection-start-column="49" selection-end-line="108" selection-end-column="49" />
-          <folding>
-            <element signature="n#head#0;n#!!top" />
-            <element signature="n#header#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#aside#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="e#4378#4561#0#HTML" />
-            <element signature="e#4598#4808#0#HTML" />
-          </folding>
+        <state relative-caret-position="34">
+          <caret line="105" column="39" lean-forward="true" selection-start-line="105" selection-start-column="39" selection-end-line="105" selection-end-column="39" />
         </state>
       </provider>
     </entry>

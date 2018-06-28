@@ -2,7 +2,7 @@ var mysql = require('mysql');
 var Promise = require('promise');
 
 
-exports.load = sql => {
+exports.load = (sql) => {
     return new Promise((resolve, reject) =>
     {
         var cn = mysql.createConnection({
