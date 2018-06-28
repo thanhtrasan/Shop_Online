@@ -17,7 +17,7 @@ var options = {
     user: 'qlquanao',
     password: 'qlquanao',
     database: 'qlquanao',
-    createDatabaseTable: true,
+    createDatabaseTable: false,
     schema: {
       tableName: 'sessions',
       columnNames: {
@@ -96,8 +96,8 @@ app.post('/login', function (req, res) {
         dbquanao.shop_control(req,res);   
     });
   });
-  var a=require('./models/admin/taikhoan_model');
+  var a=require('./models/admin/quanao_model');
 
-a.setting_accout('trasan','2');
+//a.add('1','2',3,'1','23sdf','nam','asdsa','b','ádasd','ádas','ádasd','ádas','wer');
 
 module.exports = app;

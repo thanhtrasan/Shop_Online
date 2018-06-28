@@ -1,4 +1,5 @@
 
+
 <head>
     <!-- Required meta tags-->
     <meta charset="UTF-8">
@@ -8,12 +9,12 @@
     <meta name="keywords" content="au theme template">
 
     <!-- Title Page-->
-    <title>Tables</title>
+    <title>Forms</title>
 
     <!-- Fontfaces CSS-->
     <link href="css/font-face.css" rel="stylesheet" media="all">
-    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
     <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
     <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
 
     <!-- Bootstrap CSS-->
@@ -184,11 +185,11 @@
                             <a href="chart.html">
                                 <i class="fas fa-chart-bar"></i>Charts</a>
                         </li>
-                        <li class="active">
+                        <li>
                             <a href="table.html">
                                 <i class="fas fa-table"></i>Tables</a>
                         </li>
-                        <li>
+                        <li class="active">
                             <a href="form.html">
                                 <i class="far fa-check-square"></i>Forms</a>
                         </li>
@@ -434,100 +435,151 @@
                     </div>
                 </div>
             </header>
-            <!-- END HEADER DESKTOP-->
+            <!-- HEADER DESKTOP-->
 
             <!-- MAIN CONTENT-->
             <div class="main-content">
                 <div class="section__content section__content--p30">
                     <div class="container-fluid">
-
                         <div class="row">
-                            <div class="col-md-12">
-                                <!-- DATA TABLE -->
-                                <h3 class="title-5 m-b-35">data table</h3>
-                                <div class="table-data__tool">
-                                    <div class="table-data__tool-left">
-                                        <div class="rs-select2--light rs-select2--md">
-                                            <select class="js-select2" name="property">
-                                                <option selected="selected">All Properties</option>
-                                                <option value="">Option 1</option>
-                                                <option value="">Option 2</option>
-                                            </select>
-                                            <div class="dropDownSelect2"></div>
-                                        </div>
-                                        <div class="rs-select2--light rs-select2--sm">
-                                            <select class="js-select2" name="time">
-                                                <option selected="selected">Today</option>
-                                                <option value="">3 Days</option>
-                                                <option value="">1 Week</option>
-                                            </select>
-                                            <div class="dropDownSelect2"></div>
-                                        </div>
-                                        <button class="au-btn-filter">
-                                            <i class="zmdi zmdi-filter-list"></i>filters</button>
+                            <div class="col-lg-12">
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <strong>ADD CLOTHES</strong>
                                     </div>
-                                    <div class="table-data__tool-right">
-                                        <button class="au-btn au-btn-icon au-btn--green au-btn--small">
-                                            <i class="zmdi zmdi-plus"></i>add item</button>
-                                        <div class="rs-select2--dark rs-select2--sm rs-select2--dark2">
-                                            <select class="js-select2" name="type">
-                                                <option selected="selected">Export</option>
-                                                <option value="">Option 1</option>
-                                                <option value="">Option 2</option>
-                                            </select>
-                                            <div class="dropDownSelect2"></div>
-                                        </div>
+                                    <div class="card-body card-block">
+                                        <form action="./add" method="post" class="form-horizontal">
+                                            <!--THEM SAN PHAM-->
+
+                                            <div class="row form-group">
+                                                <!--MaSanPham-->
+                                                <div class="col col-sm-2">
+                                                    <label for="input-small" class=" form-control-label" >Mã sản phẩm</label>
+                                                </div>
+                                                <div class="col col-sm-10">
+                                                    <input type="text" id="input-small" name="maquanao"  class="input-sm form-control-sm form-control">
+                                                </div>
+                                                <br/>
+                                                <br/>
+                                                <!--TEN SAN PHAM-->
+                                                <div class="col col-sm-2">
+                                                    <label for="input-small" class=" form-control-label">Tên sản phẩm</label>
+                                                </div>
+                                                <div class="col col-sm-10">
+                                                    <input type="text" id="input-small" name="ten"  class="input-sm form-control-sm form-control">
+                                                </div>
+                                                <br/>
+                                                <br/>
+                                                <!--SAN PHAM-->
+                                                <div class="col col-sm-2">
+                                                    <label for="input-small" class=" form-control-label">Giá sản phẩm</label>
+                                                </div>
+                                                <div class="col col-sm-10">
+                                                    <input type="text" id="input-small" name="giaca"  class="input-sm form-control-sm form-control">
+                                                </div>
+                                                <br/>
+                                                <br/>
+                                                <!--SAN PHAM-->
+                                                <div class="col col-sm-2">
+                                                    <label for="input-small" class=" form-control-label">Màu sắc</label>
+                                                </div>
+                                                <div class="col col-sm-10">
+                                                    <input type="text" id="input-small" name="mausac"  class="input-sm form-control-sm form-control">
+                                                </div>
+                                                <br/>
+                                                <br/>
+                                                <!--SAN PHAM-->
+                                                <div class="col col-sm-2">
+                                                    <label for="input-small" class=" form-control-label">Loại sản phẩm</label>
+                                                </div>
+                                                <div class="col col-sm-10">
+                                                    <input type="text" id="input-small" name="loai"  class="input-sm form-control-sm form-control">
+                                                </div>
+                                                <br/>
+                                                <br/>
+                                                <!--SAN PHAM-->
+                                                <div class="col col-sm-2">
+                                                    <label for="input-small" class=" form-control-label">Giới tính</label>
+                                                </div>
+                                                <div class="col col-sm-10">
+                                                    <input type="text" id="input-small" name="gioitinh"  class="input-sm form-control-sm form-control">
+                                                </div>
+                                                <br/>
+                                                <br/>
+                                                <!--SAN PHAM-->
+                                                <div class="col col-sm-52">
+                                                    <label for="input-small" class=" form-control-label">Link </label>
+                                                </div>
+                                                <div class="col col-sm-10">
+                                                    <input type="text" id="input-small" name="malink"  class="input-sm form-control-sm form-control">
+                                                </div>
+                                                <br/>
+                                                <br/>
+                                                <!--SAN PHAM-->
+                                                <div class="col col-sm-2">
+                                                    <label for="input-small" class=" form-control-label">Kích cỡ</label>
+                                                </div>
+                                                <div class="col col-sm-10">
+                                                    <input type="text" id="input-small" name="size"  class="input-sm form-control-sm form-control">
+                                                </div>
+                                                <br/>
+                                                <br/>
+                                                <!--SAN PHAM-->
+                                                <div class="col col-sm-2">
+                                                    <label for="input-small" class=" form-control-label">Mainpic</label>
+                                                </div>
+                                                <div class="col col-sm-10">
+                                                    <input type="text" id="input-small" name="mainpic"  class="input-sm form-control-sm form-control">
+                                                </div>
+                                                <br/>
+                                                <br/>
+                                                <!--SAN PHAM-->
+                                                <div class="col col-sm-2">
+                                                    <label for="input-small" class=" form-control-label">Link1</label>
+                                                </div>
+                                                <div class="col col-sm-10">
+                                                    <input type="text" id="input-small" name="malink1"  class="input-sm form-control-sm form-control">
+                                                </div>
+                                                <br/>
+                                                <br/>
+                                                <!--SAN PHAM-->
+                                                <div class="col col-sm-2">
+                                                    <label for="input-small" class=" form-control-label">Link2</label>
+                                                </div>
+                                                <div class="col col-sm-10">
+                                                    <input type="text" id="input-small" name="malink2"  class="input-sm form-control-sm form-control">
+                                                </div>
+                                                <br/>
+                                                <br/>
+                                                <!--SAN PHAM-->
+                                                <div class="col col-sm-2">
+                                                    <label for="input-small" class=" form-control-label">Link3</label>
+                                                </div>
+                                                <div class="col col-sm-10">
+                                                    <input type="text" id="input-small" name="malink3"  class="input-sm form-control-sm form-control">
+                                                </div>
+                                                <br/>
+                                                <br/>
+                                                <!--SAN PHAM-->
+                                                <div class="col col-sm-2">
+                                                    <label for="input-small" class=" form-control-label">Mô tả sản phẩm</label>
+                                                </div>
+                                                <div class="col col-sm-10">
+                                                    <input type="text" id="input-small" name="mota" placeholder="Tối đa 200 chữ" class="input-sm form-control-sm form-control">
+                                                </div>
+
+                                            </div>
+                                            <div class="card-footer">
+                                                <input type="submit"  value="Tạo Sản Phẩm" class="btn btn-primary btn-sm" style="align-items: center">
+
+                                            </div>
+                                        </form>
                                     </div>
+
                                 </div>
-                                <div class="table-responsive table-responsive-data2">
-                                    <table class="table table-data2 ">
-
-                                        <tbody>
-                                            <tr class="tr-shadow">
-<!--doc thong tin-->
-                                            {{#each info }}
-                                                <td>
-                                                    <label class="au-checkbox">
-                                                        <input type="checkbox">
-                                                        <span class="au-checkmark"></span>
-                                                    </label>
-                                                </td>
-                                                <td>{{maquanao}}</td>
-                                                <td>
-                                                    <span class="block-email">{{ten}}</span>
-                                                </td>
-                                                <td class="desc">{{gia}}</td>
-                                                <td>{{mau}}</td>
-                                                <td>
-                                                    <span class="status--process">{{loai}}</span>
-                                                </td>
-                                                <td>{{gioitinh}}</td>
-
-                                                <td>
-                                                    <div class="table-data-feature">
-                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="Send">
-                                                            <i class="zmdi zmdi-mail-send"></i>
-                                                        </button>
-                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="Edit">
-                                                            <i class="zmdi zmdi-edit"></i>
-                                                        </button>
-                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="Delete">
-                                                            <i class="zmdi zmdi-delete"></i>
-                                                        </button>
-                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="More">
-                                                            <i class="zmdi zmdi-more"></i>
-                                                        </button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                                {{/each}}
-                                            <tr class="spacer"></tr>
-
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <!-- END DATA TABLE -->
                             </div>
+
                         </div>
 
                     </div>
@@ -562,5 +614,4 @@
     <script src="js/main.js"></script>
 
 </body>
-
 

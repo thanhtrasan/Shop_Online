@@ -12,7 +12,7 @@ var db=require('../fn/quan_ao_controller');
 
 
 app.get('/', function (req, res) {
-  res.render('admin/map',{layout:'admin'});
+  res.render('index');
 });
 
 app.get('/index', function (req, res) {
