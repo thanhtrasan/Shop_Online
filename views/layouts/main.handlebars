@@ -81,7 +81,6 @@
 								<li class="has-dropdown">
 									<a href="/shop">Shop</a>
 									<ul class="dropdown">
-										<li><a href="/product-detail">Product Detail</a></li>
 										<li><a href="/cart">Shipping Cart</a></li>
 										<li><a href="/checkout">Checkout</a></li>
 										<li><a href="/order-complete">Order Complete</a></li>
@@ -91,8 +90,21 @@
 								<li><a href="/blog">Blog</a></li>
 								<li><a href="/about">About</a></li>
 								<li><a href="/contact">Contact</a></li>
-								<li><a href="/cart"><i class="icon-shopping-cart"></i> Cart [0]</a></li>								
-								<li><a href="/user/login">Login</a><z/li>
+								<li><a href="/cart"><i class="icon-shopping-cart"></i> Cart [0]</a></li>
+
+                                {{#if isLogin}}
+
+                                    <li class="has-dropdown">
+                                        <a >{{user.username}}</a>
+                                        <ul class="dropdown">
+                                            <li><a href="/">Signout</a></li>
+                                            <li><a href="/Info">Info</a></li>
+                                        </ul>
+                                    </li>
+                                {{else}}
+                                <li><a href="/user/login">Login</a></li>
+                                {{/if}}
+
 							</ul>
 						</div>
 					</div>

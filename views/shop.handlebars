@@ -8,17 +8,6 @@
 						<div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 slider-text">
 							<div class="slider-text-inner text-center">
 							
-								{{#if isLogin}}
-								<h1>Products</h1>
-								{{user.username}}
-								<h2 class="bread">
-									<span>
-										<a href="/index">Home</a>
-									</span>
-									<span>Shop</span>
-								</h2>
-								{{/if}}
-							
 							</div>
 						</div>
 					</div>
@@ -54,12 +43,12 @@
 											</a>
 										</span>
 										<span>
-											<a href="#">
+											<a href="./vote?{{maquanao}}">
 												<i class="icon-heart3"></i>
 											</a>
 										</span>
 										<span>
-											<a href="/add-to-wishlist">
+											<a href="/add-to-wishlist?maquanao={{maquanao}}&ten={{ten}}&gia={{giaca}}&link={{malink1}}">
 												<i class="icon-bar-chart"></i>
 											</a>
 										</span>

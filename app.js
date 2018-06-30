@@ -16,16 +16,7 @@ var options = {
     port: 3306,
     user: 'root',
     password: '123456',
-    database: 'qlquanao',
-    createDatabaseTable: false,
-    schema: {
-      tableName: 'sessions',
-      columnNames: {
-        session_id: 'session_id',
-        expires: 'expires',
-        data: 'data'
-      }
-    }
+    database: 'qlquanao'
   };
   var sessionStore = new MySQLStore(options);
   
@@ -62,41 +53,19 @@ app.use('/', indexRouter);
 app.use('/user', usersRouter);
 app.use('/admin', adminRouter);
 
-app.post('/login', function (req, res) {
-  var data= req.body;
-  var sql="select id "+
-          "from taikhoan "+
-          "where email = '"+data.email+"' " +
-          "and password = '"+data.password+"'";
-         
-   db.load(sql).then( rows=>{
-      if(rows.length>0)
-      {     
 
-      req.session.user=rows[0];
-      req.session.isLogin=true;
-      console.log(req.session.isLogin); 
-      res.redirect('/shop'); 
-      }
-      else
-      {         
-        res.render('user/login');
-      }
-     });
-         
-});
 
 
  app.post('/register', function (req, res) {
 
     var data = req.body;
     var sql = "insert into qlquanao.dangky(username,email,password) values('"+data.username+"','"+data.email+"', '"+data.password+"')";
-    console.log(sql);
+
     db.load(sql).then(rows => {
         dbquanao.shop_control(req,res);   
     });
   });
-  var a=require('./models/admin/quanao_model');
+  var a=require('./models/admin/donhang_model');
 
 //a.add('1','2',3,'1','23sdf','nam','asdsa','b','ádasd','ádas','ádasd','ádas','wer');
 

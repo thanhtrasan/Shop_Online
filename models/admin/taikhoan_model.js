@@ -1,5 +1,5 @@
 var db=require('../../fn/db');
-var model="id int(20) AUTO_INCREMENT not null primary key," +
+var model="id int AUTO_INCREMENT not null primary key," +
     "username varchar(100), " +
     "password varchar(16), " +
     "email varchar(100) unique, " +
