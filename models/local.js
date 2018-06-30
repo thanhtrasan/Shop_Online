@@ -51,3 +51,14 @@ module.exports.xoaitem=(cart, item) => {
 
 
 }
+
+
+//trang blog
+module.exports.blog=function (req, res) {
+    var vm={
+
+        isLogin: req.session.isLogin,
+        user: req.session.sanpham
+    };
+    res.render('blog',vm);
+};

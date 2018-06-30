@@ -3,13 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="12861a4b-9a6e-48a3-b4c4-c0c9472b60fd" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fn/local_controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/fn/local_controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fn/quan_ao_controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/fn/quan_ao_controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fn/taikhoan_controller" beforeDir="false" afterPath="$PROJECT_DIR$/fn/taikhoan_controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/local.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/local.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/quanao_model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/quanao_model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/taikhoan.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/taikhoan.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/layouts/main.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/layouts/main.handlebars" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/product-detail.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/product-detail.handlebars" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/shop.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/shop.handlebars" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,26 +25,17 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="86" column="10" lean-forward="true" selection-start-line="86" selection-start-column="10" selection-end-line="86" selection-end-column="10" />
+            <state relative-caret-position="258">
+              <caret line="87" column="21" lean-forward="true" selection-start-line="87" selection-start-column="21" selection-end-line="87" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="quan_ao_controller.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fn/admin/quan_ao_controller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="product-detail.handlebars" pinned="false" current-in-tab="true">
+      <file leaf-file-name="product-detail.handlebars" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/product-detail.handlebars">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-11">
-              <caret line="257" column="144" selection-start-line="257" selection-start-column="144" selection-end-line="257" selection-end-column="144" />
+            <state relative-caret-position="278">
+              <caret line="244" selection-start-line="244" selection-end-line="244" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -69,8 +59,8 @@
       <file leaf-file-name="local.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/local.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="30" column="33" lean-forward="true" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+            <state relative-caret-position="1071">
+              <caret line="63" column="2" selection-start-line="63" selection-start-column="2" selection-end-line="63" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -78,8 +68,14 @@
       <file leaf-file-name="local_controller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fn/local_controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="50" column="45" lean-forward="true" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
+            <state relative-caret-position="306">
+              <caret line="67" column="14" selection-start-line="67" selection-start-column="14" selection-end-line="67" selection-end-column="14" />
+              <folding>
+                <element signature="e#181#587#0" />
+                <element signature="e#657#799#0" />
+                <element signature="e#849#1072#0" />
+                <element signature="e#1118#1438#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -87,8 +83,17 @@
       <file leaf-file-name="shop.handlebars" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/shop.handlebars">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="50" column="134" lean-forward="true" selection-start-line="50" selection-start-column="91" selection-end-line="50" selection-end-column="134" />
+            <state relative-caret-position="380">
+              <caret line="205" column="26" lean-forward="true" selection-start-line="205" selection-start-column="26" selection-end-line="205" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="quanao_update.handlebars" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/admin/quanao_update.handlebars">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="120" column="109" selection-start-line="120" selection-start-column="109" selection-end-line="120" selection-end-column="109" />
             </state>
           </provider>
         </entry>
@@ -102,11 +107,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="quanao_model.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="quanao_model.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/models/quanao_model.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="132" column="45" lean-forward="true" selection-start-line="132" selection-start-column="45" selection-end-line="132" selection-end-column="45" />
+            <state relative-caret-position="153">
+              <caret line="147" column="20" lean-forward="true" selection-start-line="147" selection-start-column="20" selection-end-line="147" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -115,7 +120,7 @@
         <entry file="file://$PROJECT_DIR$/fn/quan_ao_controller.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+              <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -156,12 +161,9 @@
         <option value="$PROJECT_DIR$/views/admin/quanao_delete.handlebars" />
         <option value="$PROJECT_DIR$/views/user/login.handlebars" />
         <option value="$PROJECT_DIR$/views/about.handlebars" />
-        <option value="$PROJECT_DIR$/views/shop.handlebars" />
         <option value="$PROJECT_DIR$/views/add-to-wishlist.handlebars" />
         <option value="$PROJECT_DIR$/fn/admin/giohang_controller.js" />
         <option value="$PROJECT_DIR$/models/admin/giohang_model.js" />
-        <option value="$PROJECT_DIR$/models/local.js" />
-        <option value="$PROJECT_DIR$/fn/local_controller.js" />
         <option value="$PROJECT_DIR$/views/cart.handlebars" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/models/admin/donhang_model.js" />
@@ -173,13 +175,16 @@
         <option value="$PROJECT_DIR$/models/admin/taikhoan_model.js" />
         <option value="$PROJECT_DIR$/views/admin/quanao_update.handlebars" />
         <option value="$PROJECT_DIR$/models/admin/quanao_model.js" />
-        <option value="$PROJECT_DIR$/fn/quan_ao_controller.js" />
         <option value="$PROJECT_DIR$/models/taikhoan.js" />
         <option value="$PROJECT_DIR$/fn/taikhoan_controller" />
-        <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/views/layouts/main.handlebars" />
-        <option value="$PROJECT_DIR$/models/quanao_model.js" />
         <option value="$PROJECT_DIR$/views/product-detail.handlebars" />
+        <option value="$PROJECT_DIR$/fn/quan_ao_controller.js" />
+        <option value="$PROJECT_DIR$/models/local.js" />
+        <option value="$PROJECT_DIR$/fn/local_controller.js" />
+        <option value="$PROJECT_DIR$/routes/index.js" />
+        <option value="$PROJECT_DIR$/views/shop.handlebars" />
+        <option value="$PROJECT_DIR$/models/quanao_model.js" />
       </list>
     </option>
   </component>
@@ -323,12 +328,12 @@
       <workItem from="1530326718776" duration="15252000" />
       <workItem from="1530351305378" duration="341000" />
       <workItem from="1530364728732" duration="1917000" />
-      <workItem from="1530366826555" duration="24988000" />
+      <workItem from="1530366826555" duration="27350000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144964000" />
+    <option name="totallyTimeSpent" value="147326000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -583,13 +588,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/admin/quanao_update.handlebars">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-524">
-          <caret line="120" column="109" selection-start-line="120" selection-start-column="109" selection-end-line="120" selection-end-column="109" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fn/admin/taikhoan_controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -649,41 +647,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fn/quan_ao_controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/local.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="30" column="33" lean-forward="true" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="86" column="10" lean-forward="true" selection-start-line="86" selection-start-column="10" selection-end-line="86" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/quanao_model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="132" column="45" lean-forward="true" selection-start-line="132" selection-start-column="45" selection-end-line="132" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fn/local_controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="50" column="45" lean-forward="true" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/add-to-wishlist.handlebars">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -691,17 +654,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/shop.handlebars">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="50" column="134" lean-forward="true" selection-start-line="50" selection-start-column="91" selection-end-line="50" selection-end-column="134" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/product-detail.handlebars">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-11">
-          <caret line="257" column="144" selection-start-line="257" selection-start-column="144" selection-end-line="257" selection-end-column="144" />
+        <state relative-caret-position="278">
+          <caret line="244" selection-start-line="244" selection-end-line="244" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -709,6 +665,61 @@
             <element signature="n#style#0;n#a#2;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/quanao_update.handlebars">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="120" column="109" selection-start-line="120" selection-start-column="109" selection-end-line="120" selection-end-column="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fn/local_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="67" column="14" selection-start-line="67" selection-start-column="14" selection-end-line="67" selection-end-column="14" />
+          <folding>
+            <element signature="e#181#587#0" />
+            <element signature="e#657#799#0" />
+            <element signature="e#849#1072#0" />
+            <element signature="e#1118#1438#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fn/quan_ao_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/shop.handlebars">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="205" column="26" lean-forward="true" selection-start-line="205" selection-start-column="26" selection-end-line="205" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="87" column="21" lean-forward="true" selection-start-line="87" selection-start-column="21" selection-end-line="87" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/local.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="63" column="2" selection-start-line="63" selection-start-column="2" selection-end-line="63" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/quanao_model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="147" column="20" lean-forward="true" selection-start-line="147" selection-start-column="20" selection-end-line="147" selection-end-column="20" />
         </state>
       </provider>
     </entry>

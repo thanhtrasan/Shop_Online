@@ -139,3 +139,20 @@ module.exports.product_detail=function (req, res) {
         });
 };
 
+// tim theo size
+module.exports.timsize=(req,res)=>
+{
+    db.load("select * from quanao where size like N'"+req.query.size+"'")
+        .then((kq)=>
+        {
+            var vm={
+                ttsp:kq,
+                isLogin: req.session.isLogin,
+                user: req.session.user
+            };
+
+            res.render('shop',vm);
+
+        })
+}
+

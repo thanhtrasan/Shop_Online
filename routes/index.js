@@ -51,14 +51,7 @@ app.get('/add-to-wishlist',local.them_control);
 app.get('/xoaitem',local.xoa_item_control)
 app.get('/cart/xoaitem',local.xoa_item_cart_control);
 
-app.get('/blog', function (req, res) {
-    var vm={
-
-        isLogin: req.session.isLogin,
-        user: req.session.sanpham
-    };
-  res.render('blog',vm);
-});
+app.get('/blog', );
 
 app.get('/contact', );
 
@@ -91,5 +84,5 @@ app.post('/register',tk.resgister_control);
 
 app.post('/login',tk.login_controll );
 
-
+app.get('/search',db.timsize_control);
 module.exports = app;

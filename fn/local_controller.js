@@ -63,3 +63,6 @@ module.exports.lay_cart_control=(req,res)=> {
     };
     res.render('cart', vm);
 }
+
+//vao trang blog
+module.exports.blog_control=local.blog;
