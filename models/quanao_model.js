@@ -156,3 +156,35 @@ module.exports.timsize=(req,res)=>
         })
 }
 
+// tim theo nsx
+module.exports.timnsx=(req,res)=>
+{
+    db.load("select * from quanao where nsx like N'"+req.query.nsx+"'")
+        .then((kq)=>
+        {
+            var vm={
+                ttsp:kq,
+                isLogin: req.session.isLogin,
+                user: req.session.user
+            };
+
+            res.render('shop',vm);
+
+        })
+}
+// tim theo ten
+module.exports.timten=(req,res)=>
+{
+    db.load("select * from quanao where ten like N'%"+req.body.search+"%'")
+        .then((kq)=>
+        {
+            var vm={
+                ttsp:kq,
+                isLogin: req.session.isLogin,
+                user: req.session.user
+            };
+
+            res.render('shop',vm);
+
+        })
+}

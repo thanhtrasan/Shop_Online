@@ -84,5 +84,7 @@ app.post('/register',tk.resgister_control);
 
 app.post('/login',tk.login_controll );
 
-app.get('/search',db.timsize_control);
+app.get('/shop/search',db.timsize_control);// tim theo size
+app.get('/shop/search/nsx',db.timnsx_control);// tim theo nsx
+app.post('/search_ten',db.timten_control);// tim theo nsx
 module.exports = app;
