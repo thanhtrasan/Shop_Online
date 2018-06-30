@@ -2,3 +2,4 @@ var db=require('../models/taikhoan')
 
 module.exports.resgister_control=db.register;
 module.exports.get_resgister_control=db.get_register;
+module.exports.login_controll=db.login;

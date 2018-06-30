@@ -5,7 +5,7 @@ res.end();
 };
 module.exports.shop=function (req, res)
 {
-    var query="select * from quanao";
+    var query="select * from quanao where soluong >0";
     
     db.load(query).then(
         
@@ -121,14 +121,21 @@ module.exports.shop_thun=function (req, res) {
 
 module.exports.product_detail=function (req, res) {
     var query="select * from quanao where maquanao = N'"+req.query.maquanao+"'";
+
     db.load(query).then(
-        rows=>{
-            var vm={
-                ttsp:rows[0],
-                isLogin: req.session.isLogin,
-                user: req.session.user
-            };
-            console.log(vm);
-            res.render('product-detail',vm);
+        row=>{
+          db.load("select * from quanao where loai= N'"+row[0].loai+"' limit 1, 8")
+              .then((kq)=>
+              {
+                  var vm= {
+                      ttsp: row[0],
+                      isLogin: req.session.isLogin,
+                      user: req.session.user,
+                      lienquan: kq
+                  };
+                      res.render('product-detail',vm);
+
+              })
         });
 };
+
