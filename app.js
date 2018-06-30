@@ -56,16 +56,10 @@ app.use('/admin', adminRouter);
 
 
 
- app.post('/register', function (req, res) {
 
-    var data = req.body;
-    var sql = "insert into qlquanao.dangky(username,email,password) values('"+data.username+"','"+data.email+"', '"+data.password+"')";
+ // var a=require('./models/admin/giohang_model');
+//a.them(1,2,3)
 
-    db.load(sql).then(rows => {
-        dbquanao.shop_control(req,res);   
-    });
-  });
-  var a=require('./models/admin/donhang_model');
 
 //a.add('1','2',3,'1','23sdf','nam','asdsa','b','ádasd','ádas','ádasd','ádas','wer');
 

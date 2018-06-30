@@ -36,3 +36,30 @@ module.exports.xoa_item_control=(req,res)=>
     };
     res.render('add-to-wishlist',vm);
 }
+module.exports.xoa_item_cart_control=(req,res)=>
+{
+    local.xoaitem(req.session.cart,req.query.masp);
+    var vm={
+        isLogin: req.session.isLogin,
+        user: req.session.user,
+        ttsp:req.session.cart
+    };
+    console.log(vm);
+    res.render('cart',vm);
+}
+
+module.exports.lay_cart_control=(req,res)=> {
+    var tongtien=0;
+    var cart=req.session.cart;
+    for (i=cart.length-1;i>=0;i--)
+    {
+        tongtien += parseInt(cart[i].tong);
+    }
+    var vm = {
+        isLogin: req.session.isLogin,
+        user: req.session.user,
+        ttsp: req.session.cart,
+        total:tongtien
+    };
+    res.render('cart', vm);
+}

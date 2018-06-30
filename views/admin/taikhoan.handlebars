@@ -9,7 +9,7 @@
     <meta name="keywords" content="au theme template">
 
     <!-- Title Page-->
-    <title>Danh sach trang phuc</title>
+    <title>{{title}}</title>
 
     <!-- Fontfaces CSS-->
     <link href="css/font-face.css" rel="stylesheet" media="all">
@@ -42,7 +42,7 @@
             <div class="container-fluid">
                 <div class="header-mobile-inner">
                     <a class="logo" href="/admin/quanao">
-                        <img src="images/icon/logo.png" alt="CoolAdmin" />
+                        <img href="/admin" src="images/icon/logo.png" alt="CoolAdmin" />
                     </a>
                     <button class="hamburger hamburger--slider" type="button">
                             <span class="hamburger-box">
@@ -59,7 +59,7 @@
     <!-- MENU SIDEBAR-->
     <aside class="menu-sidebar d-none d-lg-block">
         <div class="logo">
-            <a href="#">
+            <a href="/admin">
                 <img src="images/icon/logo.png" alt="Cool Admin" />
             </a>
         </div>
@@ -101,16 +101,16 @@
             <div class="section__content section__content--p30">
                 <div class="container-fluid">
                     <div class="header-wrap">
-                        <form class="form-header" action="./quanao" method="POST">
-                            <input class="au-input au-input--xl" type="text" name="search" placeholder="Tìm theo tên hoặc mã" />
+                        <form class="form-header" action="./taikhoan" method="POST">
+                            <input class="au-input au-input--xl" type="text" name="search" placeholder="Tìm theo email" />
                             <button class="au-btn--submit" type="submit">
                                 <i class="zmdi zmdi-search"></i>
                             </button>
                         </form>
                         <div class="header-button">
-                            <!--Button quan li san pham-->
+                            <!--Button quan li tk-->
                             <div class="table-data__tool-right">
-                                <a href="./add_product">
+                                <a href="./them_tk">
                                     <button class="au-btn au-btn-icon au-btn--green au-btn--small">
                                        Thêm</button>
                                 </a>
@@ -138,42 +138,39 @@
                                     <thead>
                                     <tr>
 
-                                        <th><br/>Mã Sản Phẩm</th>
-                                        <th><br/>Tên Sản Phẩm </th>
-                                        <th><br/>Loại Sản Phẩm</th>
-                                        <th><br/>Giá Sản Phẩm</th>
+
+                                        <th><br/>Tên </th>
+                                        <th><br/>Loại Tài Khoản</th>
+                                        <th><br/>Email</th>
+                                        <th><br/>Password</th>
 
 
                                     </tr>
                                     </thead>
-                                    <tbody>
-                                    {{#each info}}
+                                    {{#each tttk}}
+                                    <tr>
                                     <tr class="tr-shadow">
 
-                                        <td>{{maquanao}}</td>
-                                        <td>{{ten}}</td>
-                                        <td>{{loai}}</td>
-                                        <td>{{giaca}}</td>
-                                        <td>
-                                            <div class="table-data-feature">
-                                                <a href="./update_product?id={{id}}">
-                                                    <button class="item" data-toggle="tooltip" data-placement="top" title="Edit">
-                                                        <i class="zmdi zmdi-edit"></i>
-                                                    </button>
-                                                </a>
-                                                <a href="./delete_product?id={{id}}">
-                                                    <button class="item" data-toggle="tooltip" data-placement="top" title="Delete">
-                                                        <i class="zmdi zmdi-delete"></i>
-                                                    </button>
-                                                </a>
-                                            </div>
-                                        </td>
-
-                                    </tr>
-                                    {{/each}}
-                                    <tr class="spacer"></tr>
-
+                                        <td>{{username}}</td>
+                                        <td>{{type}}</td>
+                                        <td>{{email}}</td>
+                                        <td>{{password}}</td>
+                                    <td>
+                                        <div class="table-data-feature">
+                                            <a href="./?id={{id}}">
+                                            <button class="item" data-toggle="tooltip" data-placement="top" title="Edit">
+                                                <i class="zmdi zmdi-edit"></i>
+                                            </button>
+                                            </a>
+                                            <a href="./delete?id={{id}}">
+                                            <button class="item" data-toggle="tooltip" data-placement="top" title="Delete">
+                                                <i class="zmdi zmdi-delete"></i>
+                                            </button>
+                                            </a>
+                                        </div>
+                                    </td>
                                     </tbody>
+                                    {{/each}}
                                 </table>
                             </div>
                             <!-- END DATA TABLE -->

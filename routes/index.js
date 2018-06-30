@@ -5,7 +5,6 @@ var db1=require('../fn/db');
 var db=require('../fn/quan_ao_controller');
 var tk=require('../fn/taikhoan_controller')
 var local=require('../fn/local_controller');
-var giohang=require('../fn/admin/giohang_controller');
 /* GET home page. */
 
 
@@ -19,6 +18,7 @@ app.get('/',local.index_control );
 app.get('/index', local.index_control);
 
 app.get('/shop',db.shop_control);
+
 
 
 
@@ -49,6 +49,7 @@ app.get('/about', function (req, res) {
 
 app.get('/add-to-wishlist',local.them_control);
 app.get('/xoaitem',local.xoa_item_control)
+app.get('/cart/xoaitem',local.xoa_item_cart_control);
 
 app.get('/blog', function (req, res) {
     var vm={
@@ -61,14 +62,7 @@ app.get('/blog', function (req, res) {
 
 app.get('/contact', );
 
-app.get('/cart', function (req, res) {
-    var vm={
-
-        isLogin: req.session.isLogin,
-        user: req.session.user
-    };
-  res.render('cart',vm);
-});
+app.get('/cart', local.lay_cart_control);
 
 app.get('/checkout', function (req, res) {
     var vm={
@@ -83,7 +77,7 @@ app.get('/order-complete', function (req, res) {
     var vm={
 
         isLogin: req.session.isLogin,
-        user: req.session.user
+        user: req.session.user,
     };
   res.render('order-complete',vm);
 });
@@ -97,7 +91,7 @@ app.post('/register',tk.resgister_control);
 
 app.post('/login', function (req, res) {
     var data= req.body;
-    var sql="select username,id "+
+    var sql="select username,id,type "+
         "from taikhoan "+
         "where email = '"+data.email+"' " +
         "and password = '"+data.password+"'";
@@ -108,6 +102,7 @@ app.post('/login', function (req, res) {
 
             req.session.user=rows[0];
             req.session.isLogin=true;
+
 
 
             res.redirect('/shop');
