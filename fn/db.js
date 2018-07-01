@@ -6,10 +6,10 @@ exports.load = (sql) => {
     return new Promise((resolve, reject) =>
     {
         var cn = mysql.createConnection({
-            host: '127.0.0.1',
+            host: 'db4free.net',
             port: 3306,
-            user: 'root',
-            password: '123456',
+            user: 'qlquanao',
+            password: 'qlquanao',
             database: 'qlquanao'
         });
 

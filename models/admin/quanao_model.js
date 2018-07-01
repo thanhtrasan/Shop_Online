@@ -1,25 +1,5 @@
 var db=require('../../fn/db');
 
-var model=
-    "maquanao varchar(30) unique, " +
-    "ten varchar(50), " +
-    "giaca bigint, " +
-    "mausac nvarchar(45) ," +
-    "loai varchar(15)," +
-    "gioitinh varchar(15)," +
-    "malink varchar(70)," +
-    "size char(10)," +
-    "mainpic varchar(70)," +
-    "malink1 varchar(70)," +
-    "malink2 varchar(70)," +
-    "malink3 nvarchar(70)," +
-    "mota varchar(200)," +
-    "id int AUTO_INCREMENT not null primary key";
-
-
-module.exports=
-    db.load('create table if not exists quanao ( '+model+')');
-
 
 // get data
 module.exports.getdata=function(req, res)

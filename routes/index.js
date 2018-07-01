@@ -51,9 +51,9 @@ app.get('/add-to-wishlist',local.them_control);
 app.get('/xoaitem',local.xoa_item_control)
 app.get('/cart/xoaitem',local.xoa_item_cart_control);
 
-app.get('/blog', );
+app.get('/blog',local.blog_control );
 
-app.get('/contact', );
+app.get('/contact',local.contact_control);
 
 app.get('/cart', local.lay_cart_control);
 
@@ -83,6 +83,7 @@ app.get('/register',tk.get_resgister_control);
 app.post('/register',tk.resgister_control);
 
 app.post('/login',tk.login_controll );
+app.get('/logout',local.logout_control );
 
 app.get('/shop/search',db.timsize_control);// tim theo size
 app.get('/shop/search/nsx',db.timnsx_control);// tim theo nsx

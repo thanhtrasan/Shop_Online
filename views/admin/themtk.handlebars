@@ -9,7 +9,7 @@
     <meta name="keywords" content="au theme template">
 
     <!-- Title Page-->
-    <title>{{title}}</title>
+    <title>Thêm Tài Khoản</title>
 
     <!-- Fontfaces CSS-->
     <link href="css/font-face.css" rel="stylesheet" media="all">
@@ -110,130 +110,61 @@
                                         <strong>ADD CLOTHES</strong>
                                     </div>
                                     <div class="card-body card-block">
-                                        <form action="./add_product" method="post" class="form-horizontal" autocomplete="off">
-                                            <!--THEM SAN PHAM-->
+                                        <form action="/admin/them_tk" method="post" class="form-horizontal" autocomplete="off">
+                                            <!--Tem tk-->
 
                                             <div class="row form-group">
-                                                <!--MaSanPham-->
+                                                <!--username-->
                                                 <div class="col col-sm-2">
-                                                    <label for="input-small" class=" form-control-label " >Mã sản phẩm</label>
+                                                    <label for="input-small" class=" form-control-label " >Username </label>
                                                 </div>
                                                 <div class="col col-sm-10">
-                                                    <input type="text" id="input-small" name="maquanao"  class="input-sm form-control-sm form-control">
+                                                    <input type="text" id="input-small" name="username"  class="input-sm form-control-sm form-control">
                                                 </div>
                                                 <br/>
                                                 <br/>
-                                                <!--TEN SAN PHAM-->
+                                                <!--email-->
                                                 <div class="col col-sm-2">
-                                                    <label for="input-small" class=" form-control-label">Tên sản phẩm</label>
+                                                    <label for="input-small" class=" form-control-label">Email</label>
                                                 </div>
                                                 <div class="col col-sm-10">
-                                                    <input type="text" id="input-small" name="ten"  class="input-sm form-control-sm form-control">
+                                                    <input type="text" id="input-small" name="email"  class="input-sm form-control-sm form-control">
+                                                </div>
+                                                <br/>
+                                                <br/>
+                                                <!--Sdt-->
+                                                <div class="col col-sm-2">
+                                                    <label for="input-small" class=" form-control-label">SDT</label>
+                                                </div>
+                                                <div class="col col-sm-10">
+                                                    <input type="text" value="0" id="input-small" name="sdt"  class="input-sm form-control-sm form-control">
+                                                </div>
+                                                <br/>
+                                                <br/>
+                                                <!--pass-->
+                                                <div class="col col-sm-2">
+                                                    <label for="input-small" class=" form-control-label">pass</label>
+                                                </div>
+                                                <div class="col col-sm-10">
+                                                    <input type="text" id="input-small" name="pass"  class="input-sm form-control-sm form-control">
                                                 </div>
                                                 <br/>
                                                 <br/>
                                                 <!--SAN PHAM-->
                                                 <div class="col col-sm-2">
-                                                    <label for="input-small" class=" form-control-label">Giá sản phẩm</label>
+                                                    <label for="input-small" class=" form-control-label"Địa chỉ</label>
                                                 </div>
                                                 <div class="col col-sm-10">
-                                                    <input type="text" value="0" id="input-small" name="giaca"  class="input-sm form-control-sm form-control">
+                                                    <input type="text" id="input-small" name="dc"  class="input-sm form-control-sm form-control">
                                                 </div>
                                                 <br/>
                                                 <br/>
-                                                <!--SAN PHAM-->
-                                                <div class="col col-sm-2">
-                                                    <label for="input-small" class=" form-control-label">Màu sắc</label>
-                                                </div>
-                                                <div class="col col-sm-10">
-                                                    <input type="text" id="input-small" name="mausac"  class="input-sm form-control-sm form-control">
-                                                </div>
-                                                <br/>
-                                                <br/>
-                                                <!--SAN PHAM-->
-                                                <div class="col col-sm-2">
-                                                    <label for="input-small" class=" form-control-label">Loại sản phẩm</label>
-                                                </div>
-                                                <div class="col col-sm-10">
-                                                    <input type="text" id="input-small" name="loai"  class="input-sm form-control-sm form-control">
-                                                </div>
-                                                <br/>
-                                                <br/>
-                                                <!--SAN PHAM-->
-                                                <div class="col col-sm-2">
-                                                    <label for="input-small" class=" form-control-label">Giới tính</label>
-                                                </div>
-                                                <div class="col col-sm-10">
-                                                    <input type="text" id="input-small" name="gioitinh"  class="input-sm form-control-sm form-control">
-                                                </div>
-                                                <br/>
-                                                <br/>
-                                                <!--SAN PHAM-->
-                                                <div class="col col-sm-52">
-                                                    <label for="input-small" class=" form-control-label">Link </label>
-                                                </div>
-                                                <div class="col col-sm-10">
-                                                    <input type="text" id="input-small" name="malink"  class="input-sm form-control-sm form-control">
-                                                </div>
-                                                <br/>
-                                                <br/>
-                                                <!--SAN PHAM-->
-                                                <div class="col col-sm-2">
-                                                    <label for="input-small" class=" form-control-label">Kích cỡ</label>
-                                                </div>
-                                                <div class="col col-sm-10">
-                                                    <input type="text" id="input-small" name="size"  class="input-sm form-control-sm form-control">
-                                                </div>
-                                                <br/>
-                                                <br/>
-                                                <!--SAN PHAM-->
-                                                <div class="col col-sm-2">
-                                                    <label for="input-small" class=" form-control-label">Mainpic</label>
-                                                </div>
-                                                <div class="col col-sm-10">
-                                                    <input type="text" id="input-small" name="mainpic"  class="input-sm form-control-sm form-control">
-                                                </div>
-                                                <br/>
-                                                <br/>
-                                                <!--SAN PHAM-->
-                                                <div class="col col-sm-2">
-                                                    <label for="input-small" class=" form-control-label">Link1</label>
-                                                </div>
-                                                <div class="col col-sm-10">
-                                                    <input type="text" id="input-small" name="malink1"  class="input-sm form-control-sm form-control">
-                                                </div>
-                                                <br/>
-                                                <br/>
-                                                <!--SAN PHAM-->
-                                                <div class="col col-sm-2">
-                                                    <label for="input-small" class=" form-control-label">Link2</label>
-                                                </div>
-                                                <div class="col col-sm-10">
-                                                    <input type="text" id="input-small" name="malink2"  class="input-sm form-control-sm form-control">
-                                                </div>
-                                                <br/>
-                                                <br/>
-                                                <!--SAN PHAM-->
-                                                <div class="col col-sm-2">
-                                                    <label for="input-small" class=" form-control-label">Link3</label>
-                                                </div>
-                                                <div class="col col-sm-10">
-                                                    <input type="text" id="input-small" name="malink3"  class="input-sm form-control-sm form-control">
-                                                </div>
-                                                <br/>
-                                                <br/>
-                                                <!--SAN PHAM-->
-                                                <div class="col col-sm-2">
-                                                    <label for="input-small" class=" form-control-label">Mô tả sản phẩm</label>
-                                                </div>
-                                                <div class="col col-sm-10">
-                                                    <input type="text" id="input-small" name="mota" placeholder="Tối đa 200 chữ" class="input-sm form-control-sm form-control">
-                                                </div>
 
-                                            </div>
+
+
                                             <div class="card-footer">
 
-                                                <input type="submit"  value="Tạo Sản Phẩm" class="btn btn-primary btn-sm" style="align-items: center">
+                                                <input type="submit"  value="CẬP NHẬT   " class="btn btn-primary btn-sm" style="align-items: center">
 
                                             </div>
                                         </form>

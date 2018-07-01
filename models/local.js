@@ -58,7 +58,22 @@ module.exports.blog=function (req, res) {
     var vm={
 
         isLogin: req.session.isLogin,
-        user: req.session.sanpham
+        user: req.session.user
     };
     res.render('blog',vm);
 };
+//trang contact
+module.exports.contact=function (req, res) {
+    var vm={
+
+        isLogin: req.session.isLogin,
+        user: req.session.user
+    };
+    res.render('contact',vm);
+};
+module.exports.logout=(req,res)=>
+{
+    req.session.isLogin=false;
+    req.session.user=[];
+    res.redirect('/');
+}

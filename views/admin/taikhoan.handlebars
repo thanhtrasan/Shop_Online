@@ -157,12 +157,22 @@
                                         <td>{{password}}</td>
                                     <td>
                                         <div class="table-data-feature">
-                                            <a href="./?id={{id}}">
+                                            <a href="/admin/nangquyen?id={{id}}">
+                                            <button class="item" data-toggle="tooltip" data-placement="top" title="UP LV">
+                                                <i class="zmdi zmdi-mail-send"></i>
+                                            </button>
+                                            </a>
+                                            <a href="/admin/haquyen?id={{id}}">
+                                                <button class="item" data-toggle="tooltip" data-placement="top" title="DOWN LV">
+                                                    <i class="zmdi zmdi-mail-send"></i>
+                                                </button>
+                                            </a>
+                                            <a href="/admin/taikhoan/sua?id={{id}}">
                                             <button class="item" data-toggle="tooltip" data-placement="top" title="Edit">
                                                 <i class="zmdi zmdi-edit"></i>
                                             </button>
                                             </a>
-                                            <a href="./delete?id={{id}}">
+                                            <a href="/admin/taikhoan/delete?id={{id}}">
                                             <button class="item" data-toggle="tooltip" data-placement="top" title="Delete">
                                                 <i class="zmdi zmdi-delete"></i>
                                             </button>

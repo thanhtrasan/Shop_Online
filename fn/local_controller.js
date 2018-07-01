@@ -66,3 +66,5 @@ module.exports.lay_cart_control=(req,res)=> {
 
 //vao trang blog
 module.exports.blog_control=local.blog;
+module.exports.contact_control=local.contact;
+module.exports.logout_control=local.logout;

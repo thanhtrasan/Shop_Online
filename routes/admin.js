@@ -20,15 +20,11 @@ router.get('/delete_product',db.delete_control );
 
 
 // xu li tai khoan
-router.get('/taikhoan',tk.danhsachtk);
-router.get('/taikhoan/delete',(req,res)=>
-{
-    console.log(req.query.id);
-    var vm={
-        isLogin:req.session.isLogin,
-        user:req.session.user,
-        layout:'admin'
-    }
-    res.render('taikhoan',vm);
-});
+router.get('/taikhoan',tk.danhsachtk);//lay dsach tk
+router.get('/nangquyen',tk.nangquyen_control);
+router.get('/haquyen',tk.haquyen_control);
+router.get('/taikhoan/delete',tk.xoatk_control);
+router.get('/taikhoan/capnhat',tk.xoatk_control);
+router.get('/taikhoan/sua',tk.getupdatetk_control);
+router.post('/taikhoan/capnhat_tk',tk.updatetk_control);
 module.exports = router;
