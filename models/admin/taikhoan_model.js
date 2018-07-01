@@ -190,3 +190,4 @@ module.exports.update=(req,res)=>
     res.render('/admin/taikhoan',{layout:'admin'});
 
 }
+

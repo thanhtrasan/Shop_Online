@@ -188,3 +188,17 @@ module.exports.timten=(req,res)=>
 
         })
 }
+
+module.exports.vote=(req,res)=>
+{
+/*db.load("select  vote from quanao where maquanao= N'"+req.query.id+"'",(kq)=>
+{
+    console.log(2);
+    var sl= parseInt(kq[0].vote)+1;
+    db.load("update quanao set soluong= "+sl+" where maquanao= N'"+req.query.id+"'");
+
+console.log(2);
+    res.redirect('shop');
+})*/
+res.redirect('/');
+}

@@ -14,6 +14,7 @@ var local=require('../fn/local_controller');
 
 
 app.get('/',local.index_control );
+app.get('/vote',db.vote_control );
 
 app.get('/index', local.index_control);
 
