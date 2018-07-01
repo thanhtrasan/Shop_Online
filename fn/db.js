@@ -9,7 +9,7 @@ exports.load = (sql) => {
             host: 'db4free.net',
             port: 3306,
             user: 'qlquanao',
-            password: 'qlquanao,
+            password: 'qlquanao',
             database: 'qlquanao'
         });
 
