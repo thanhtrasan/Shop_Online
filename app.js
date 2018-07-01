@@ -12,10 +12,10 @@ var app = express();
 var session = require('express-session')
 var MySQLStore = require('express-mysql-session')(session);
 var options = {
-    host: '127.0.0.1',
+    host: 'db4free.net',
     port: 3306,
-    user: 'root',
-    password: '123456',
+    user: 'qlquanao',
+    password: 'qlquanao',
     database: 'qlquanao'
   };
   var sessionStore = new MySQLStore(options);
